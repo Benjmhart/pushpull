@@ -36,7 +36,7 @@ library:
     - megaparsec
     - process
 executables:
-  pushpull-exe:
+  pushpull:
     main:                Main.hs
     source-dirs:         app
     ghc-options:

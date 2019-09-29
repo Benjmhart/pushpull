@@ -34,9 +34,15 @@ each time pushpull is run from within your repo,  pushpull will
 
 On a future update, pushpull will also automatically copy files to the remote locations listed in `mappings.txt`.
 
-installation
+## Installation
 
 installation requires haskell stack.
 
 - clone this repo
 - from the repo, run `stack install`
+
+## Usage
+
+- navigate to your repo folder
+- create a `mappings.txt` file as described above
+- run `pushpull`
