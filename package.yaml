@@ -24,7 +24,17 @@ dependencies:
 
 library:
   source-dirs: src
-
+  dependencies:
+    - classy-prelude
+    - turtle
+    - free
+    - directory
+    - text
+    - time
+    - natural-transformation
+    - containers
+    - megaparsec
+    - process
 executables:
   pushpull-exe:
     main:                Main.hs
