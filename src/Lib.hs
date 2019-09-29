@@ -20,6 +20,9 @@ data Files = Files
 
 type PathPair = (FilePath, FilePath)
 
+-- TODO: find a graceful way to automatically resolve merge conflicts
+
+
 pushpullMain :: IO ()
 pushpullMain = do
   mappings <- makeMappings
@@ -28,7 +31,9 @@ pushpullMain = do
   gitCommitWithTime
   callCommand "git pull origin master"
   callCommand "git push"
+  -- TODO: run install procedure
   return ()
+
 
 gitCommitWithTime = do
   time <- getCurrentTime
